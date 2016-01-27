@@ -1,0 +1,5 @@
+C:\Users\dragunov\Documents\GitHub\IntegrationService\ConsoleApplication1\bin\Debug\IntegrationService.exe.config
+C:\Users\dragunov\Documents\GitHub\IntegrationService\ConsoleApplication1\bin\Debug\IntegrationService.exe
+C:\Users\dragunov\Documents\GitHub\IntegrationService\ConsoleApplication1\bin\Debug\IntegrationService.pdb
+C:\Users\dragunov\Documents\GitHub\IntegrationService\ConsoleApplication1\obj\Debug\IntegrationService.exe
+C:\Users\dragunov\Documents\GitHub\IntegrationService\ConsoleApplication1\obj\Debug\IntegrationService.pdb

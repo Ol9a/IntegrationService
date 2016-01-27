@@ -8,7 +8,7 @@ using System.Text;
 
 namespace IntegrationService
 {
-   
+
     public class IntegrationService : IIntegrationService
     {
         private Integrator _integrator;

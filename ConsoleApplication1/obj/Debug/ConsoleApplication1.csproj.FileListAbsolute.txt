@@ -1,0 +1,6 @@
+C:\Users\dragunov\Documents\GitHub\IntegrationService\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\dragunov\Documents\GitHub\IntegrationService\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\dragunov\Documents\GitHub\IntegrationService\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\dragunov\Documents\GitHub\IntegrationService\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\dragunov\Documents\GitHub\IntegrationService\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\dragunov\Documents\GitHub\IntegrationService\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
