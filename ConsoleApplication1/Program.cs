@@ -1,22 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Configuration;
 using System.ServiceModel;
 using System.ServiceModel.Description;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace IntegrationService
 {
     class Program
     {
         static void Main(string[] args)
         {
+            var endpoint = ConfigurationManager.AppSettings["Endpoint"];
+
             WebHttpBinding webBinding = new WebHttpBinding();
 
-            var sHost = new ServiceHost(typeof(IntegrationService.IntegrationService));
+            var sHost = new ServiceHost(typeof(IntegrationService));
 
-            sHost.AddServiceEndpoint(typeof(IntegrationService.IIntegrationService), webBinding, "http://dev-03-dt:6060").EndpointBehaviors.Add(new WebHttpBehavior());
+            sHost.AddServiceEndpoint(typeof(IIntegrationService), webBinding, endpoint).EndpointBehaviors.Add(new WebHttpBehavior());
 
             sHost.Open();
             Console.ReadLine();
