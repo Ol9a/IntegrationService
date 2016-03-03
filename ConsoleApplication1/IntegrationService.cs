@@ -6,15 +6,16 @@ namespace IntegrationService
 
     public class IntegrationService : IIntegrationService
     {
-        private readonly Integrator _integrator;
+
+        private string _oneSUser;
+        private string _oneSPassword;
+        private string _pathToDb;
 
         public IntegrationService()
         {
-            var oneSUser = ConfigurationManager.AppSettings["1CUser"];
-            var oneSPassword = ConfigurationManager.AppSettings["1CPassword"];
-            var pathToDb = ConfigurationManager.AppSettings["pathToDb"];
-
-            _integrator = new Integrator(oneSUser, oneSPassword, pathToDb);
+            _oneSUser = ConfigurationManager.AppSettings["1CUser"];
+            _oneSPassword = ConfigurationManager.AppSettings["1CPassword"];
+            _pathToDb = ConfigurationManager.AppSettings["pathToDb"];    
         }
 
         public Result IntegrateInvoice(string id, Invoice invoice)
@@ -27,11 +28,15 @@ namespace IntegrationService
             };
             try
             {
-                _integrator.IntegrateInvoice(invoice);
+                using (var integrator = new Integrator(_oneSUser, _oneSPassword, _pathToDb))
+                {
+                    integrator.IntegrateInvoice(invoice);
+                }
+               
             }
             catch (Exception e)
             {
-
+               // _integrator.Dispose();
                 result.Message = e.Message;
                 result.Status = "Error";
             }
