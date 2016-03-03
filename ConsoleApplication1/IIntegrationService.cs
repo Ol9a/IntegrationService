@@ -119,6 +119,13 @@ namespace IntegrationService
 
         [DataMember]
         public AccountAddress PostAddress { get; set; }
+
+        [DataMember]
+        public string Phone { get; set; }
+
+        [DataMember]
+        public string Type { get; set; }
+
     }
 
     [DataContract]
@@ -171,6 +178,9 @@ namespace IntegrationService
 
         [DataMember]
         public string Name { get; set; }
+
+        [DataMember]
+        public double Percent { get; set; }
     }
 
     [DataContract]
