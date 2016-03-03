@@ -9,3 +9,9 @@ C:\Users\pavlova\Desktop\IntegrationService-master\ConsoleApplication1\bin\Debug
 C:\Users\pavlova\Desktop\IntegrationService-master\ConsoleApplication1\obj\Debug\IntegrationService.csprojResolveAssemblyReference.cache
 C:\Users\pavlova\Desktop\IntegrationService-master\ConsoleApplication1\obj\Debug\IntegrationService.exe
 C:\Users\pavlova\Desktop\IntegrationService-master\ConsoleApplication1\obj\Debug\IntegrationService.pdb
+C:\Users\pavlova\Documents\GitHub\IntegrationService\ConsoleApplication1\bin\Debug\IntegrationService.exe.config
+C:\Users\pavlova\Documents\GitHub\IntegrationService\ConsoleApplication1\obj\Debug\IntegrationService.exe
+C:\Users\pavlova\Documents\GitHub\IntegrationService\ConsoleApplication1\obj\Debug\IntegrationService.pdb
+C:\Users\pavlova\Documents\GitHub\IntegrationService\ConsoleApplication1\bin\Debug\IntegrationService.exe
+C:\Users\pavlova\Documents\GitHub\IntegrationService\ConsoleApplication1\bin\Debug\IntegrationService.pdb
+C:\Users\pavlova\Documents\GitHub\IntegrationService\ConsoleApplication1\obj\Debug\IntegrationService.csprojResolveAssemblyReference.cache
