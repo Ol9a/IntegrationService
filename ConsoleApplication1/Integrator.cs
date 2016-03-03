@@ -174,32 +174,35 @@ namespace IntegrationService
             var curinvoice = FindByCode(invoice, code1c);
             if (curinvoice != null)
             {
-
-                /*
-                Set(invoice, "Наименование", i.invoice.Name);
-                Set(invoice, "ПолнНаименование", i.invoice.AlternativeName);
-                //Set(invoice, "Телефоны", i.invoice);
-                Set(invoice, "ИНН", i.invoice.BillingInfo.INN + '/' + i.invoice.BillingInfo.KPP);
-                Set(invoice, "ЮридическийАдрес", i.invoice.JurAddress.FullAddress);
-                Set(invoice, "ПочтовыйАдрес", i.invoice.PostAddress.FullAddress);
-                //Set(invoice, "ВидКонтрагента", i.invoice.);
+                Set(invoice, "ДатаДок", i.StartDate);
+                Set(invoice, "НомерДок", i.Code1C);
+                Set(invoice, "НомерДоговора", i.Contract.Number);
+                Set(invoice, "ДатаДоговора", i.Contract.StartDate);
+                var account = FindByCode(invoice, code1c);
+                if (account != null)
+                {
+                    Set(invoice, "Контрагент", account);
+                    Set(invoice, "Плательщик", account);
+                }
 
                 Save(invoice);
-                */
             }
             else
             {
                 Create(invoice);
                 Set(invoice, "Код", code1c);
-              //  Set(invoice, "ДатаДок", i.);
+                Set(invoice, "ДатаДок", i.StartDate);
                 Set(invoice, "НомерДок", i.Code1C);
-              /*  Set(invoice, "ДатаДоговора", i.);
-                Set(invoice, "НомерДоговора", i.invoice.BillingInfo.INN + '/' + i.invoice.BillingInfo.KPP);
-                Set(invoice, "ЮридическийАдрес", i.invoice.JurAddress.FullAddress);
-                Set(invoice, "ПочтовыйАдрес", i.invoice.PostAddress.FullAddress);
-                //Set(invoice, "ВидКонтрагента", i.invoice.);
-
-                Save(invoice);*/
+                Set(invoice, "НомерДоговора", i.Contract.Number);
+                Set(invoice, "ДатаДоговора", i.Contract.StartDate);
+                var account=FindByCode(invoice,code1c);
+                if (account!=null)
+                {
+                Set(invoice, "Контрагент", account);
+                Set(invoice, "Плательщик", account);
+                }
+                               
+                Save(invoice);
             }
 
         }
