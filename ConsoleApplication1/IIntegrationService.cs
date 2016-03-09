@@ -49,6 +49,9 @@ namespace IntegrationService
         public string RS { get; set; }
 
         [DataMember]
+        public string OGRN { get; set; }
+
+        [DataMember]
         public string Bank { get; set; }
 
         [DataMember]
