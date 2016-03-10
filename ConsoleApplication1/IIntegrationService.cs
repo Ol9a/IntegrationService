@@ -202,6 +202,12 @@ namespace IntegrationService
         public Unit Unit { get; set; }
 
         [DataMember]
+        public double Price { get; set; }
+
+        [DataMember]
+        public string CurrencyShortName { get; set; }
+
+        [DataMember]
         public Tax Tax { get; set; }
 
         [DataMember]
