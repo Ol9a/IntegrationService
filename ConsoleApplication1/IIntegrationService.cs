@@ -49,6 +49,9 @@ namespace IntegrationService
         public string RS { get; set; }
 
         [DataMember]
+        public string OGRN { get; set; }
+
+        [DataMember]
         public string Bank { get; set; }
 
         [DataMember]
@@ -197,6 +200,12 @@ namespace IntegrationService
 
         [DataMember]
         public Unit Unit { get; set; }
+
+        [DataMember]
+        public double Price { get; set; }
+
+        [DataMember]
+        public string CurrencyShortName { get; set; }
 
         [DataMember]
         public Tax Tax { get; set; }
