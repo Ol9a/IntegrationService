@@ -14,4 +14,3 @@ C:\Users\pavlova\Documents\GitHub\IntegrationService\ConsoleApplication1\obj\Deb
 C:\Users\pavlova\Documents\GitHub\IntegrationService\ConsoleApplication1\obj\Debug\IntegrationService.pdb
 C:\Users\pavlova\Documents\GitHub\IntegrationService\ConsoleApplication1\bin\Debug\IntegrationService.exe
 C:\Users\pavlova\Documents\GitHub\IntegrationService\ConsoleApplication1\bin\Debug\IntegrationService.pdb
-C:\Users\pavlova\Documents\GitHub\IntegrationService\ConsoleApplication1\obj\Debug\IntegrationService.csprojResolveAssemblyReference.cache
